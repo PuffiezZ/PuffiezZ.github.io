@@ -129,13 +129,14 @@ html, body {
 .title-info{
     display: flex;
     flex-direction: row;
+    gap: 6vw;
 }
 .link-highlight{
     color: rgb(234, 77, 77);
 }
 .title-description{
     font-size: 1.2vw;
-    width: 25vw;
+    width: 13vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -153,8 +154,8 @@ html, body {
 }
 .title-box-parent{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4vw;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 0.3vw;
     padding-top: 0.8vw;
     padding-left: 1vw;
     font-family: "nunito";
@@ -277,12 +278,6 @@ html, body {
 @media screen and (max-width: 768px) {
     .button-row .header-buttons {
         display: none;
-    }
-    .title-Name{
-        font-size: 3px;
-    }
-    .title-description{
-        font-size: 3px;
     }
     .screenshot-panel{
         grid-template-columns: 1fr 1fr;
