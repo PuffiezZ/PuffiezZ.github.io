@@ -282,7 +282,7 @@ html, body {
         grid-template-columns: 1fr 1fr;
     }
     .upper-title-info{
-        height: 45vw;
+        height: 70vw;
     }
     .screenshot-box img{
     width: 43vw;
@@ -376,5 +376,6 @@ html, body {
 }
 /*Mobile*/
 @media screen and (max-width:640px) {
+
 
 }
