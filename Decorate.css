@@ -1,0 +1,367 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.reserved-panel{
+    background-color: black;
+}
+.reserved-panel-text{
+    padding: 2vw 4vw;
+    font-size: 1.5vw;
+    font-family: "raleway";
+    color: white;
+}
+.skill-box-description ul{
+    padding-left: clamp(2rem,7vw,15rem);
+}
+.Csharp-main{
+    font-style: italic;
+    font-weight: 100;  
+}
+.line-bar-horizontal{
+    width: 100%;
+    height: 2px;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+}
+.skill-box-description{
+    word-wrap:break-word;
+    text-align:left;
+    padding: 0;
+    font-size: clamp(2px, 1.5vw, 20px);
+    border-radius: 0 0 Clamp(0.1vw,2.2vw,4vw) Clamp(0.1vw,2.2vw,4vw);
+    border: 2px solid #14007a33;
+    width: 100%;
+    height: 100%;
+}
+.skill-box-title{
+    text-align: center;
+    padding: 1.3% 0%;
+    border-radius: Clamp(0.1vw,2.2vw,4vw) Clamp(0.1vw,2.2vw,4vw) 0 0;
+    font-size: clamp(2px, 2vw, 60px);
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    background-color: #8FABD4;
+    border: 2px solid #14007a33;   /* ขอบโปร่งใส 20% */   /* ทำแบบกระจกขุ่น */
+}
+.skill-box{
+    font-family: "nunito";
+    width: 100%;
+    height: 100%;
+}
+.skill-box-parent{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 4%;
+}
+.skill-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+}
+.skill-title{
+    font-family: "nunito";
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    font-size: clamp(6px, 5vw, 50px);
+}
+.Game-View{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./bgLatte.jpg);
+    background-size: 100%;
+}
+.show-games{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    align-items: top;
+    padding: Clamp(5px,7vw,100px) Clamp(5px,7vw,100px);
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.game-name{
+    font-weight: 900;
+    font-family: "nunito";
+    font-size: clamp(4px,2vw,40px);
+    text-align: left;
+    padding-top: clamp(0.5rem,2vw,3rem);
+    line-height: 1.2;
+}
+.section-body{
+    padding-top: 5%;
+}
+.game-banner-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: scale 0.3s ease-in-out;
+}
+.game-banner{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.game-banner:hover{
+    transform: scale(1.05);
+}
+.loopvideo {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%; /* ปรับสูง banner */
+    overflow: hidden;
+    position: relative;
+}
+.trailer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-game-view{
+    padding: 2rem;
+    font-family: "nunito";
+    font-size: clamp(10px,5vw,100px);
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+.containers .header {
+    display: flex;
+    justify-content: space-between;
+    height: 5.7vw;
+    background-color: black;
+    position: fixed;
+    top: 0;                /* ติดขอบบน */
+    left: 0;
+    width: 100%;           /* ให้กว้างเต็มจอ */
+    z-index: 999;          /* กันไม่ให้ไปอยู่หลัง element อื่น */
+}
+.containers{
+    font-family: "raleway";
+    width: auto;
+    height: auto;
+}
+.button-row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-buttons{
+    font-family: "raleway";
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.8vw;
+    height: 100%;
+    width: 9vw;
+    transition: background-color 0.3s ease;
+}
+.header-content{
+    padding-left: 2vw;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    gap: 1.5vw;
+}
+.about-me{
+    font-family: "raleway";
+    font-weight: 500;
+    font-size: clamp(6px, 5vw, 50px);
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    font-family: "nunito";
+}
+.email-address{
+    color: gray;
+}
+.linkedIn{
+    color: gray;
+}
+.github{
+    color: gray;
+}
+.Contact-title{
+    font-family: "raleway";
+    font-weight: 500;
+    font-size: clamp(3px, 5vw, 35px);
+    padding: 4% 0%;
+}
+.me-description{
+    font-weight: 300;
+    font-size: clamp(3px, 2vw, 20px);
+    font-family: "nunito";
+    max-width: 100%;  
+    word-wrap: break-word;
+    text-align: justify;
+    line-height: 1.3; 
+    color: rgb(66, 66, 66);
+}
+.the-kitten-kitchen-link{
+    color: rgb(224, 141, 24);
+    font-weight: 500;
+}
+.line-bar{
+    margin: 0% 5%;
+    width: 10px;
+    height:  100% 100%;
+    background-color: #8FABD4;
+    border-radius: 8px; /* ทำให้มุมโค้ง */
+}
+.header-buttons:hover{
+    color: black;
+    background-color: white;
+}
+.header-name {
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+}
+.header-surname{
+    font-size: 3vw;
+    background: linear-gradient(
+    180deg,#8FABD4 30%,#4A70A9 70%
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+.avatar{
+    padding: 3rem 3rem;
+    display: flex;
+}
+.avatar img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+.dropdown-mobile{
+    display: none;
+}
+
+@font-face{
+    font-family: "raleway";
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "nunito";
+    src: url(./Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+}
+
+/*PC Desktop*/
+@media screen and (min-width: 768px) {
+    .header-buttons{
+        font-size:larger
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .button-row .header-buttons {
+        display: none;
+    }
+    .dropdown-mobile {
+        padding-top: 2vw;
+        padding-right: 10vw;
+        position: relative;
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+    }
+    .menu-toggle {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 1.5vw;
+        font-size: 3vw;
+        padding: 1vw 5vw;
+        cursor: pointer;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .dropdown-content-mobile {
+        display: none;
+        width: 100%;
+        left: 0;
+        z-index: 99;
+    }
+    .dropdown-content-mobile a {
+        color: white;
+        background-color: #d6524b;
+        border: 2px solid black;
+        border-radius: 8px; 
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+    .dropdown-content-mobile.show {
+        display: block;
+    }
+    .line-bar{
+    margin: 5% 0%;
+    width: 100%;
+    height: 0.3vw;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+    }
+    .avatar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar img{
+        margin-left: 4vw;
+        width: 225px;
+        height: 225px;
+    }
+    .Contact-title{
+        text-align: center;
+    }
+    .email{
+        font-size: 3vw;
+        text-align: left;
+        align-items: center;
+    }
+    .containers .header{
+        height: 10vw;
+    }
+    .header-name {
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+    }
+    .header-surname{
+        font-size: 5vw;
+        background: linear-gradient(
+        180deg,#8FABD4 30%,#4A70A9 70%
+        );
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+    }
+}
+/*Mobile*/
+@media screen and (max-width:640px) {
+
+}

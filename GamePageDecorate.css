@@ -1,0 +1,380 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-y: auto;
+    background: white;
+}
+.reserved-panel{
+    background-color: black;
+}
+.reserved-panel-text{
+    padding: 2vw 4vw;
+    font-size: 1.5vw;
+    font-family: "raleway";
+    color: white;
+}
+.screenshot-box{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+.screenshot-box img{
+    width: 27vw;
+    height: 17vw;
+}
+.screenshot-panel{
+    display: grid;
+    justify-items: center;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5vw 5vw;
+    padding: 2vw 4vw;
+}
+.iframe-video iframe{
+    width: 75vw;
+    height: 45vw;
+}
+
+.media-header{
+    font-family: "nunito";
+    font-weight: 300;
+    font-size: 5vw;
+    padding-top: 4vw;
+    padding-left: 4vw;
+}
+.media-line{
+    margin-left: 4vw;
+    width: 92%;
+    height: 0.3vw;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+}
+.iframe-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54vw;
+}
+.containers{
+    height: auto;
+}
+.media-title{
+    width: 100%;
+    background: linear-gradient(rgb(233, 129, 31), rgb(113, 59, 0));
+    color: white;
+    text-align: center;
+    font-family: "nunito";
+    font-size: 8vw;
+    font-weight: 400;
+}
+.media-panel{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.award-title-description{
+    padding-top: 1.6vw;
+    font-size: 1.7vw;
+    font-family: "nunito";
+    text-align: center;
+}
+.award-img{
+    width: auto;
+    height: auto;
+    padding-top: 1.3vw;
+}
+.award-img img{
+    width: 27vw;
+    height: 27vw;
+}
+.award-title-name{
+    text-align: center;
+    font-size: 4vw;
+    font-family: "nunito";
+    font-weight: 800;
+}
+.award-box-parent{
+    background-color: white;
+    border-radius: 1.3vw;
+    padding-top: 1vw;
+    padding-bottom: 1.6vw;
+    margin-right: 7.8vw;
+    margin-top: 4vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    border-radius: 1.3vw;
+    border: 0.3vw solid black;
+}
+.upper-title{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph-text {
+    line-height: 1.9vw;
+    font-size: 1.2vw;
+    font-family: "nunito";
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.paragraph-info{
+    padding-top: 0.5vw;
+    gap: 1.3vw;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: start; /* อย่าให้ title ถูกดึงให้สูงตาม description */
+}
+.title-info{
+    display: flex;
+    flex-direction: row;
+}
+.link-highlight{
+    color: rgb(234, 77, 77);
+}
+.title-description{
+    font-size: 1.2vw;
+    width: 25vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.title-Name{
+    font-size: 1.4vw;
+    background-color: black;
+    color: white;
+    border-radius: 0.6vw;
+    width: 10vw;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.title-box-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    padding-top: 0.8vw;
+    padding-left: 1vw;
+    font-family: "nunito";
+}
+.description-box-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.upper-title-info{
+    background-color: #ffffff;
+    border-radius: 1.3vw;
+    border: 0.3vw solid black;
+    display: grid;
+    grid-template-columns: 1fr; /* ซ้าย fix, ขวาขยายได้ */
+    width: 80%;
+    height: 25vw;
+    align-items: start; /* อย่าให้ title ถูกดึงให้สูงตาม description */
+}
+.info-panel-parent{
+    padding: 2vw 8vw;
+    background-color: #4A70A9;
+    background: linear-gradient(to right, #ce8f07 46.5%, #ffffff 43%);
+}
+.header-logo{
+    width: auto;
+    height: auto;
+}
+.logo img{
+    margin-top: 3.1vw;
+    padding-top: 0.7vw;
+    width: 27vw;
+    height: 17vw;
+}
+.header-banner{
+    width: 100%;
+    height: 23vw; /* ← ต้องกำหนดความสูง */
+    background-image: url("./Banner/TheKittenKitchen-Banner.jpg");
+    background-size: cover;        /* ปรับภาพครอบพื้นที่ */
+    background-position: center;   /* จัดภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat;  /* ไม่ให้ซ้ำ */
+    justify-items: center;
+    align-items: center;
+}
+.header-content{
+    padding-left: 2vw;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    gap: 1.5vw;
+}
+.section-body{
+    padding-top: 5%;
+}
+.containers{
+    font-family: "raleway";
+    width: auto;
+    height: auto;
+}
+.header-buttons{
+    font-family: "raleway";
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.8vw;
+    height: 100%;
+    width: 9vw;
+    transition: background-color 0.3s ease;
+}
+.button-row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.containers .header {
+    display: flex;
+    justify-content: space-between;
+    height: 5.7vw;
+    background-color: black;
+    position: fixed;
+    width: 100%;       
+    z-index: 999;         
+}
+.header-buttons:hover{
+    color: black;
+    background-color: white;
+}
+.header-name {
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+}
+.header-surname{
+    font-size: 3vw;
+    background: linear-gradient(
+    180deg,#8FABD4 30%,#4A70A9 70%
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+.dropdown-mobile{
+    display: none;
+}
+@font-face{
+    font-family: "raleway";
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "nunito";
+    src: url(./Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+}
+/*PC Desktop*/
+@media screen and (min-width: 768px) {
+    .header-buttons{
+        font-size:larger
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .button-row .header-buttons {
+        display: none;
+    }
+        .screenshot-panel{
+        grid-template-columns: 1fr 1fr;
+    }
+    .upper-title-info{
+        height: 90px;
+    }
+    .screenshot-box img{
+    width: 43vw;
+    height: 27vw;
+    }
+    .logo img{
+    margin-top: 4.5vw;
+    padding-top: 0.7vw;
+    width: 27vw;
+    height: 17vw;
+}   
+    .dropdown-mobile {
+        padding-top: 2vw;
+        padding-right: 10vw;
+        position: relative;
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+    }
+    .menu-toggle {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 1.5vw;
+        font-size: 3vw;
+        padding: 1vw 5vw;
+        cursor: pointer;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .dropdown-content-mobile {
+        display: none;
+        width: 100%;
+        left: 0;
+        z-index: 99;
+    }
+    .dropdown-content-mobile a {
+        color: white;
+        background-color: #d6524b;
+        border: 2px solid black;
+        border-radius: 8px; 
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+    .dropdown-content-mobile.show {
+        display: block;
+    }
+    .line-bar{
+    margin: 5% 0%;
+    width: 100%;
+    height: 0.3vw;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+    }
+    .avatar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar img{
+        margin-left: 4vw;
+        width: 225px;
+        height: 225px;
+    }
+    .Contact-title{
+        text-align: center;
+    }
+    .email{
+        font-size: 3vw;
+        text-align: left;
+        align-items: center;
+    }
+    .containers .header{
+        height: 10vw;
+    }
+    .header-name {
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+    }
+    .header-surname{
+        font-size: 5vw;
+        background: linear-gradient(
+        180deg,#8FABD4 30%,#4A70A9 70%
+        );
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+    }
+}
+/*Mobile*/
+@media screen and (max-width:640px) {
+
+}

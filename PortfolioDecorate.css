@@ -1,0 +1,264 @@
+.portfolio-header{
+    background-color: #F7F7E8;
+    padding: 10vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reserved-panel{
+    background-color: black;
+}
+.reserved-panel-text{
+    padding: 2vw 4vw;
+    font-size: 1.5vw;
+    font-family: "raleway";
+    color: white;
+}
+.header-content{
+    padding-left: 2vw;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    gap: 1.5vw;
+}
+.black-line{
+    width: 100%;
+    height: 1vw;
+    background-color: #000000;
+}
+.Game-Grid-Name{
+    font-family: "nunito";
+    padding-top: 0.9vw;
+    text-align: center;
+    text-size-adjust: inherit;
+    font-size: 2.0vw;
+    font-weight: 500;
+}
+.Game-Grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.game-button img{
+    height: 100%;
+    width: 100%;
+    height: auto; 
+    border-radius: 12px; 
+    transition: 0.5s;
+    transform: translateY(0);
+}
+.game-button img:hover {
+    transition: 0.5s;
+    transform: translateY(-0.7vw);
+}
+.game-button{
+    padding: 0.3vw;
+    width: 100%;
+    border: none;
+    backdrop-filter: blur(10px);   
+    background-color: rgba(0, 0, 0, 0.12);    
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: 0.5s;
+}
+.game-button:hover{
+    background-color: rgba(255, 204, 0, 0.497);  
+}
+.Game-Panel-Grid{
+    display: grid;
+    margin-top: 2.4vw;
+    grid-template-columns: 0.6fr 0.6fr 0.6fr;
+    gap: 20% 2%;
+}
+.Game-Panel-Line{
+    width: 100%;
+    height: 0.2vw;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+}
+.Game-Panel-Title{
+    padding-bottom: 1.3vw;
+    font-family: "raleway";
+    font-weight: 400;
+    font-size: 4.3vw;
+}
+.Game-Panel{
+    margin-top: 4vw;
+    padding: 3vw;
+}
+.portfolio-title{
+    font-family: "raleway";
+    font-weight: 800;
+    font-size: 9vw;
+}
+.portfolio-description{
+    padding-top: 2vw;
+    font-family: "nunito";
+    font-size: 1.5vw;
+    text-align: center;
+    width: 80vw;
+}
+.section-body{
+    padding-top: 5%;
+}
+.containers{
+    font-family: "raleway";
+    width: auto;
+    height: auto;
+}
+.header-buttons{
+    font-family: "raleway";
+    display: inline-block;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.8vw;
+    height: 100%;
+    width: 9vw;
+    transition: background-color 0.3s ease;
+}
+.button-row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.containers .header {
+    display: flex;
+    justify-content: space-between;
+    height: 5.7vw;
+    background-color: black;
+    position: fixed;
+    width: 100%;           
+    z-index: 999; 
+}
+.header-buttons:hover{
+    color: black;
+    background-color: white;
+}
+.header-name {
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+}
+.header-surname{
+    font-size: 3vw;
+    background: linear-gradient(
+    180deg,#8FABD4 30%,#4A70A9 70%
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.dropdown-mobile{
+    display: none;
+}
+@font-face{
+    font-family: "raleway";
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "nunito";
+    src: url(./Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+}
+
+/*PC Desktop*/
+@media screen and (min-width: 768px) {
+    .header-buttons{
+        font-size:larger
+    }
+}
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .button-row .header-buttons {
+        display: none;
+    }
+    .dropdown-mobile {
+        padding-top: 2vw;
+        padding-right: 10vw;
+        position: relative;
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+    }
+    .menu-toggle {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 1.5vw;
+        font-size: 3vw;
+        padding: 1vw 5vw;
+        cursor: pointer;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .dropdown-content-mobile {
+        display: none;
+        width: 100%;
+        left: 0;
+        z-index: 99;
+    }
+    .dropdown-content-mobile a {
+        color: white;
+        background-color: #d6524b;
+        border: 2px solid black;
+        border-radius: 8px; 
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+    .dropdown-content-mobile.show {
+        display: block;
+    }
+    .line-bar{
+    margin: 5% 0%;
+    width: 100%;
+    height: 0.3vw;
+    background-color: #8FABD4;
+    border-radius: 2px; /* ทำให้มุมโค้ง */
+    }
+    .avatar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar img{
+        margin-left: 4vw;
+        width: 225px;
+        height: 225px;
+    }
+    .Contact-title{
+        text-align: center;
+    }
+    .email{
+        font-size: 3vw;
+        text-align: left;
+        align-items: center;
+    }
+    .containers .header{
+        height: 10vw;
+    }
+    .header-name {
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+    }
+    .header-surname{
+        font-size: 5vw;
+        background: linear-gradient(
+        180deg,#8FABD4 30%,#4A70A9 70%
+        );
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+    }
+}
+/*Mobile*/
+@media screen and (max-width:640px) {
+
+}

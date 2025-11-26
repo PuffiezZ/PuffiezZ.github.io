@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title><link rel="stylesheet" href="PortfolioDecorate.css">
+</head>
+<body>
+    <div class="containers">
+        <div class="header">
+            <div class="header-content">
+                <a class="header-name"> JOEWEE </a>
+                <a class="header-surname">LOKE</a>
+            </div>
+            <div class="button-row">
+                <button class="header-buttons" id="b0" onclick="window.location.href='index.html';">
+                    Home</button>
+                <button class="header-buttons" id="b0" onclick="window.location.href='PortfolioPage.html';">
+                    Portfolio</button>
+                <button class="header-buttons" id="b1" onclick="window.open('Joewee Loke Resume.pdf', '_blank');">
+                    Resume</button>
+                </div>
+            <div class="dropdown-mobile">
+                <button class="menu-toggle">Portfolio ☰</button>
+                <div class="dropdown-content-mobile" id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="PortfolioPage.html">Portfolio</a>
+                    <a href="Joewee Loke Resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="section-body">  
+            <div class="portfolio-header">
+                <div class="portfolio-title">Portfolio</div>
+                <div class="portfolio-description">
+                    My portfolio includes games I have made since my second year of university, as well as my solo projects.
+                    I also have several assignments that I am proud to showcase.
+                    For every project, I was primarily responsible for the coding.
+                    On this page, you will find games such as Sausage Cat and my AI testing projects.
+                </div>
+            </div>
+            <div class="black-line"></div>
+            <div class="Game-Panel">
+                <div class="Game-Panel-Title">Game</div>
+                <div class="Game-Panel-Line"></div>
+                <div class="Game-Panel-Grid">
+                    <div class="Game-Grid">
+                        <Button class="game-button" onclick="window.location.href='GamePage_TheKittenKitchen.html';">
+                            <img src="ButtonImage/TheKittenKitchen-Button.jpg" alt="-">
+                        </Button>
+                        <div class="Game-Grid-Name">The Kitten's Kitchen</div>
+                    </div>
+                    <div class="Game-Grid">
+                        <Button class="game-button" onclick="window.location.href='GamePage_Organic Runner.html';">
+                            <img src="ButtonImage/OrganicRunner-Button.jpg" alt="-">
+                        </Button>
+                        <div class="Game-Grid-Name">Organic Runner</div>
+                    </div>
+                    <div class="Game-Grid">
+                        <Button class="game-button" onclick="window.location.href='GamePage_Knight Caliber.html';">
+                            <img src="ButtonImage/Knight556-Button.jpg" alt="-">
+                        </Button>
+                        <div class="Game-Grid-Name">Knight 5.56 Calibur</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Game-Panel">
+                <div class="Game-Panel-Title">Prototypes</div>
+                <div class="Game-Panel-Line"></div>
+                <div class="Game-Panel-Grid">
+                    <div class="Game-Grid">
+                        <Button class="game-button" onclick="window.location.href='Prototypes_Unity Behavior Tree.html';">
+                            <img src="ButtonImage/AI Button Thumbnail.jpg" alt="-">
+                        </Button>
+                        <div class="Game-Grid-Name">Unity Behavior Tree</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reserved-panel">
+                <div class="reserved-panel-text">
+                    © <span style="color: red;">2025</span> Joewee Loke. <span style="color: rgb(1, 187, 1);">All</span> rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function toggleMobileMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+    }
+    document.querySelector(".menu-toggle").addEventListener("click", toggleMobileMenu);
+</script>
+</body>
+</html>

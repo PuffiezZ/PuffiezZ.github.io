@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight 5.56 Calibur Page</title><link rel="stylesheet" href="GamePageDecorate3.css">
+</head>
+<body>
+    <div class="containers">
+        <div class="header">
+            <div class="header-content">
+                <a class="header-name"> JOEWEE </a>
+                <a class="header-surname">LOKE</a>
+            </div>
+            <div class="button-row">
+                <button class="header-buttons" id="b0" onclick="window.location.href='index.html';">
+                    Home</button>
+                <button class="header-buttons" id="b0" onclick="window.location.href='PortfolioPage.html';">
+                    Portfolio</button>
+                 <button class="header-buttons" id="b1" onclick="window.open('Joewee Loke Resume.pdf', '_blank');">
+                    Resume</button>
+            </div>
+            <div class="dropdown-mobile">
+                <button class="menu-toggle">Portfolio ☰</button>
+                <div class="dropdown-content-mobile" id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="PortfolioPage.html">Portfolio</a>
+                    <a href="Joewee Loke Resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="section-body">  
+            <div class="header-banner">
+                <div class="header-logo">
+                    <div class="logo">
+                        <img src="./Banner/Knight Logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="info-panel-parent">
+                <div class="title-info">
+                    <div class="upper-title">
+                        <div class="upper-title-info">
+                            <div class="title-box-parent">
+                                <div class="title-Name">Engine</div>
+                                <div class="title-description">Unity 2022</div>
+                            </div>
+                            <div class="title-box-parent">
+                                <div class="title-Name">Role</div>
+                                <div class="title-description">Solo Dev</div>
+                            </div>
+                            <div class="title-box-parent">
+                                <div class="title-Name">Platform</div>
+                                <div class="title-description">Web GL</div>
+                            </div>
+                            <div class="title-box-parent">
+                                <div class="title-Name">Release Date</div>
+                                <div class="title-description">2023</div>
+                            </div>
+                            <div class="title-box-parent">
+                                <div class="title-Name">Logo</div>
+                                <div class="title-description">
+                                    <a href="Banner/Knight Logo.png" download class="link-highlight">Organic Runner Logo</a>
+                                </div>
+                            </div>
+                            <div class="title-box-parent">
+                                <div class="title-Name">Itch.Io</div>
+                                <div class="title-description">
+                                    <a href="https://puffiezz.itch.io/knight-556-caliber" download class="link-highlight">Itch.io Page</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="paragraph-info">
+                        <div class="paragraph-text">
+                            <div>
+                            <span style="font-weight: 800;">Knight 5.56 Calibur</span>
+                            is a 2D top-down, roguelike shooter with pixel-style graphics.
+                            This was my first game development project, and it played a major role in inspiring my passion for creating games.
+                            </div>
+                        </div>      
+                        <div class="paragraph-text" style="font-weight: 800; font-size: 1.8vw;">
+                            <span>The First game I've made</span>
+                        </div>
+                        <div class="paragraph-text">
+                            I learned a lot about how to make games from this project.
+                            I created it using Unity, which required me to learn the basics of C# and Unity’s tools.
+                            I also learned how to work with sprite sheets and implement them in the game.
+                            I released a demo as well — you can play it on my personal itch.io account!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-panel">
+                <div class="media-title">Media</div>
+                <div class="media-header">Screenshot</div>
+                <div class="media-line"></div>
+                <div class="screenshot-panel">
+                    <div class="screenshot-box">
+                        <img src="./Knight ScreenShot/16.jpg" alt="-">
+                    </div>
+                    <div class="screenshot-box">
+                        <img src="./Knight ScreenShot/19.jpg" alt="-">
+                    </div>
+                    <div class="screenshot-box">
+                        <img src="./Knight ScreenShot/18.jpg" alt="-">
+                    </div>
+                    <div class="screenshot-box">
+                        <img src="./Knight ScreenShot/17.jpg" alt="-">
+                    </div>
+                </div>
+            </div>
+            <div class="reserved-panel">
+                <div class="reserved-panel-text">
+                    © <span style="color: red;">2025</span> Joewee Loke. <span style="color: rgb(1, 187, 1);">All</span> rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function toggleMobileMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+    }
+    document.querySelector(".menu-toggle").addEventListener("click", toggleMobileMenu);
+</script>
+</body>
+</html>
