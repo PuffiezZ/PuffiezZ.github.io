@@ -170,7 +170,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr; /* ซ้าย fix, ขวาขยายได้ */
     width: 80%;
-    height: 25vw;
+    height: 30vw;
     align-items: start; /* อย่าให้ title ถูกดึงให้สูงตาม description */
 }
 .info-panel-parent{
@@ -280,9 +280,6 @@ html, body {
     }
         .screenshot-panel{
         grid-template-columns: 1fr 1fr;
-    }
-    .upper-title-info{
-        height: 125px;
     }
     .screenshot-box img{
     width: 43vw;
