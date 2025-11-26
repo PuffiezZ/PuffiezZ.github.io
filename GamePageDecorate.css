@@ -170,7 +170,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr; /* ซ้าย fix, ขวาขยายได้ */
     width: 80%;
-    height: 30vw;
+    padding-bottom: 1vw;
     align-items: start; /* อย่าให้ title ถูกดึงให้สูงตาม description */
 }
 .info-panel-parent{
@@ -282,13 +282,10 @@ html, body {
         grid-template-columns: 1fr 1fr;
     }
     .title-Name{
-        font-size: 0.1vw;
+        font-size: 1vw;
     }
     .title-description{
-        font-size: 0.1vw;
-    }
-    .upper-title-info{
-        height: 40vw;
+        font-size: 1vw;
     }
     .screenshot-box img{
     width: 43vw;
@@ -383,9 +380,4 @@ html, body {
 /*Mobile*/
 @media screen and (max-width:640px) {
 
-
 }
-
-
-
-
