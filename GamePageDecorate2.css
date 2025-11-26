@@ -129,6 +129,7 @@ html, body {
 .title-info{
     display: flex;
     flex-direction: row;
+    gap: 2.5vw;
 }
 .link-highlight{
     color: rgb(0, 138, 39);
@@ -153,8 +154,8 @@ html, body {
 }
 .title-box-parent{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4vw;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 2vw;
     padding-top: 0.8vw;
     padding-left: 1vw;
     font-family: "nunito";
