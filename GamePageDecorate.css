@@ -281,8 +281,14 @@ html, body {
         .screenshot-panel{
         grid-template-columns: 1fr 1fr;
     }
+    .title-Name{
+        font-size: 1vw;
+    }
+    .title-description{
+        font-size: 1vw;
+    }
     .upper-title-info{
-        height: 70vw;
+        height: 60vw;
     }
     .screenshot-box img{
     width: 43vw;
@@ -379,3 +385,4 @@ html, body {
 
 
 }
+
