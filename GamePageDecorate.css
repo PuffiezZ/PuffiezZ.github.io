@@ -282,7 +282,7 @@ html, body {
         grid-template-columns: 1fr 1fr;
     }
     .upper-title-info{
-        height: 90px;
+        height: 125px;
     }
     .screenshot-box img{
     width: 43vw;

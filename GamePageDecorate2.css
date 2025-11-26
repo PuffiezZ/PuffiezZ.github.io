@@ -279,7 +279,7 @@ html, body {
         display: none;
     }
     .upper-title-info{
-        height: 100px;
+        height: 135px;
     }
     .screenshot-panel{
         grid-template-columns: 1fr 1fr;

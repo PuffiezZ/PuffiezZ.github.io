@@ -276,7 +276,7 @@ html, body {
 /*Tablet*/
 @media screen and (max-width: 768px) {
     .upper-title-info{
-        height: 130px;
+        height: 30px;
     }
     .button-row .header-buttons {
         display: none;
