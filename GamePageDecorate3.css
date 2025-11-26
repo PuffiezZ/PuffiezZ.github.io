@@ -170,7 +170,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr; /* ซ้าย fix, ขวาขยายได้ */
     width: 80%;
-    height: 24vw;
+    padding-bottom: 1vw;
     align-items: start; /* อย่าให้ title ถูกดึงให้สูงตาม description */
 }
 .info-panel-parent{
