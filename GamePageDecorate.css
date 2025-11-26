@@ -281,6 +281,9 @@ html, body {
         .screenshot-panel{
         grid-template-columns: 1fr 1fr;
     }
+    .upper-title-info{
+        height: 45vw;
+    }
     .screenshot-box img{
     width: 43vw;
     height: 27vw;
