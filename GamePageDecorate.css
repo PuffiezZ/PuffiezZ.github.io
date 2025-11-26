@@ -282,13 +282,13 @@ html, body {
         grid-template-columns: 1fr 1fr;
     }
     .title-Name{
-        font-size: 1vw;
+        font-size: 0.1vw;
     }
     .title-description{
-        font-size: 1vw;
+        font-size: 0.1vw;
     }
     .upper-title-info{
-        height: 60vw;
+        height: 50vw;
     }
     .screenshot-box img{
     width: 43vw;
@@ -385,4 +385,5 @@ html, body {
 
 
 }
+
 
